@@ -2,18 +2,21 @@
 ### Date: 21-11-2026
 ### Dataset Name : AirPassengers
 ### AIM:
-To Create a project on Time series analysis on weather forecasting using ARIMA model in  Python and compare with other models.
+To create a project on Time Series Analysis and Forecasting of Air Passenger Data using the ARIMA model in Python and compare its performance with other forecasting methods.
 ### ALGORITHM:
-1. Explore the dataset of weather 
-2. Check for stationarity of time series time series plot
-   ACF plot and PACF plot
-   ADF test
-   Transform to stationary: differencing
-3. Determine ARIMA models parameters p, q
-4. Fit the ARIMA model
-5. Make time series predictions
-6. Auto-fit the ARIMA model
-7. Evaluate model predictions
+1. Import the necessary Python libraries such as Pandas, NumPy, Matplotlib and Statsmodels.
+2. Load the AirPassengers CSV dataset and explore the data.
+3. Convert the Month column into datetime format and set it as the index.
+4. Plot the monthly passenger data to understand its trend and patterns.
+5. Check the stationarity of the time series using the ADF test.
+6. Apply differencing to make the time series stationary and plot the ACF and PACF graphs.
+7. Determine the ARIMA model parameters (p, d, q).
+8. Split the dataset into training data (80%) and testing data (20%).
+9. Fit the ARIMA model using the training data.
+10. Make predictions using the fitted ARIMA model.
+11. Evaluate the model using Root Mean Squared Error (RMSE).
+12. Compare the ARIMA model with a simple Naive forecasting method.
+13. Fit the final ARIMA model using the complete dataset and predict future passenger numbers.
 ### PROGRAM:
 ```python
 
@@ -105,4 +108,4 @@ arima_model(data, order=(5, 1, 0))
 
 
 ### RESULT:
-Thus the program run successfully based on the ARIMA model using python.
+Thus, the ARIMA model was successfully implemented using the AirPassengers dataset in Python. The model was used to analyze monthly passenger data, predict future passenger numbers and evaluate its performance using RMSE by comparing it with the Naive forecasting method.
